@@ -36,3 +36,5 @@ Build and Run
    ```
 
 The container exposes the console on port 8080.
+
+For more info on how to configure WeeChat, see [docker-weechat-otr](https://github.com/fstab/docker-weechat-otr).
