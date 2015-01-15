@@ -43,8 +43,8 @@ term = pty.fork(process.env.SHELL || 'sh', [], {
   name: require('fs').existsSync('/usr/share/terminfo/x/xterm-256color')
     ? 'xterm-256color'
     : 'xterm',
-  cols: 80,
-  rows: 24,
+  cols: 120,
+  rows: 36,
   cwd: process.env.HOME
 });
 
@@ -117,6 +117,7 @@ io = io.listen(server, {
 
 io.sockets.on('connection', function(sock) {
   socket = sock;
+  term.redraw();
 
   socket.on('data', function(data) {
     if (stream) stream.write('IN: ' + data + '\n-\n');
