@@ -3,7 +3,7 @@ docker-weechat-web
 
 Web interface for the [WeeChat](https://weechat.org) IRC client.
 
-![WeeChat Web interface](screenshot.png?raw=true "WeeChat Web interface")
+![WeeChat Web interface](https://github.com/fstab/docker-weechat-web/raw/master/screenshot.png?raw=true "WeeChat Web interface")
 
 The Web interface is based on [chjj/term.js](https://github.com/chjj/term.js), a terminal written in javascript.
 
