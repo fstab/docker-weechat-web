@@ -7,8 +7,19 @@ Web interface for the [WeeChat](https://weechat.org) IRC client.
 
 The Web interface is based on [chjj/term.js](https://github.com/chjj/term.js), a terminal written in javascript.
 
-Build and Run
--------------
+Run from Docker Hub
+-------------------
+
+A pre-built image is available on [Docker Hub](https://registry.hub.docker.com/u/fstab/weechat-web) and can be run as follows:
+
+    docker run -t -i fstab/weechat-web
+
+The container exposes the console on port 8080.
+
+For more info on how to configure WeeChat, see [docker-weechat-otr](https://github.com/fstab/docker-weechat-otr).
+
+Build from Source
+-----------------
 
 1. Make sure [Docker](https://www.docker.com) is installed.
 
@@ -17,7 +28,7 @@ Build and Run
    ```bash
    git clone https://github.com/fstab/docker-weechat-otr.git
    cd docker-weechat-otr
-   docker build -t="fstab/weechat-otr:v1" .
+   docker build -t="fstab/weechat-otr" .
    cd ..
    ```
 
@@ -34,7 +45,3 @@ Build and Run
    ```bash
    docker run -t -i fstab/weechat-web:v1
    ```
-
-The container exposes the console on port 8080.
-
-For more info on how to configure WeeChat, see [docker-weechat-otr](https://github.com/fstab/docker-weechat-otr).

@@ -1,4 +1,4 @@
-FROM fstab/weechat-otr:v1
+FROM fstab/weechat-otr
 MAINTAINER Fabian Stäber, fabian@fstab.de
 
 USER root
